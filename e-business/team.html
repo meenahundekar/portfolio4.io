@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  
+    <title>TEAM</title>
+    <style>
+       
+
+
+/* Apply styling to the image inside the container */
+.image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+/* Create a black color overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+    transition: background-color 0.3s, opacity 0.3s; /* Add a smooth transition effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+/* Style the Instagram icon */
+.icon {
+    font-size: 40px; /* Adjust the size of the icon as needed */
+    color: white; /* Icon color */
+}
+
+/* Define the hover effect */
+.image-container:hover .image {
+    transform: scale(1.1); /* Increase the scale on hover */
+}
+
+/* Show the black overlay on hover */
+.image-container:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+    opacity: 1;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="team">
+        <h1 style="text-align: center;">Our Special Team </h1>
+        <div class="image-container" style="position: relative; top: 500px; left: 1100px; bottom: 550px;">
+            <img src="assets/img/team/1.jpg" alt="1" style="height: 320px; width: 250px;"> 
+            
+            <div class="overlay">
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="box" style="border: 1px solid gray; height: 70px; width: 248px; position: relative; bottom: 10px; z-index: -1;">
+            <h3 style="text-align: center;">Jhon Mickel</h3>
+            <h4 style="text-align: center; position: relative; bottom: 16px;" >seo</h4>
+            </div>
+        </div>
+        <div class="image-container" style="position: relative; left: 270px; bottom: 395px;">
+            <img src="assets/img/team/2.jpg" alt="1" style="height: 320px; width: 250px;"> 
+            <div class="overlay">     <div class="icon">
+                <i class="fab fa-instagram"></i>
+            </div>       </div>
+            <div class="box" style="border: 1px solid gray; height: 70px; width: 248px; position: relative; bottom: 10px; z-index: -1;">
+            <h3 style="text-align: center;">Andrew Arnold</h3>
+            <h4 style="text-align: center; position: relative; bottom: 16px;" >Web Developer</h4>
+            </div>
+        </div>
+        <div class="image-container" style="position: relative; left: 545px; bottom: 791px;">
+            <img src="assets/img/team/3.jpg" alt="1" style="height: 320px; width: 250px;"> 
+            <div class="overlay"><div class="icon">
+                <i class="fab fa-instagram"></i>
+            </div></div>
+            <div class="box" style="border: 1px solid gray; height: 70px; width: 248px; position: relative; bottom: 10px; z-index: -1;">
+            <h3 style="text-align: center;">Lellien Linda</h3>
+            <h4 style="text-align: center; position: relative; bottom: 16px;" >Web Design</h4>
+            </div>
+        </div>
+        <div class="image-container" style="position: relative; left: 820px; bottom: 1187px;">
+            <img src="assets/img/team/4.jpg" alt="1" style="height: 320px; width: 250px;"> 
+            <div class="overlay">
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="box" style="border: 1px solid gray; height: 70px; width: 248px; position: relative; bottom: 10px; z-index: -1;">
+            <h3 style="text-align: center;">Jhon Powel</h3>
+            <h4 style="text-align: center; position: relative; bottom: 16px;" >Seo Expert</h4>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

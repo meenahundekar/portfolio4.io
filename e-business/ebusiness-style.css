@@ -1,0 +1,730 @@
+
+
+/*======================================================================*/
+/*======================================================================*/
+/*=======IMAGE SLIDER========*/
+
+*{
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+
+height: 100%;
+width: 100%;
+  background-size: cover;
+}
+
+nav{
+  height: 70px;
+  width: 100%;
+  /* background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/background/page-header.jpg);  */
+  /* position: fixed; */
+   box-shadow: 1px solid black;
+  background: #0d0d0d;
+}
+
+nav ul {
+  position: relative;
+  left: 40%;
+  bottom: 60%;
+  margin-right: 45px;
+}
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a{
+  color:white;
+  display: block;
+  line-height: 70px;
+  padding: 0 15px;
+  font-size: 18px;
+  transition: .5s;
+  text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+   color: #3EC1D5;
+  
+}
+
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  /* border-top: 3px solid rgb(8, 8, 8); */
+  opacity: 0;
+  visibility: hidden;
+}
+
+nav ul li:hover > ul{
+  opacity: 1;
+  visibility: visible;
+  top: 70px;
+  transition: .3s linear;
+}
+
+nav ul ul li{
+  width: 180px;
+  display: list-item;
+  position: relative;
+  right: 150px;
+  border-top: none;
+  background: white;
+}
+
+nav ul ul li a{
+  line-height: 50px;
+  text-decoration: none;
+  color: black;
+ 
+}
+
+nav ul ul ul {
+  border-top: none;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  right: 230px;
+
+}
+
+/* #header .logo h1 {
+font-size: 36px;
+margin: 0;
+padding: 0;
+line-height: 1;
+font-weight: bold;
+color: white;
+} */
+
+
+
+
+
+/* 
+-------------------------------------------------
+------------------------------------------------
+-------------------image---------------------- */
+.slideshow-container {
+max-width: 10000px;
+position: relative;
+margin: 0;
+}
+
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 300px;
+width: auto;
+margin-top: -22px;
+padding: 30px;
+color: white;
+font-weight: bold;
+font-size: 35px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+}
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+} 
+
+.dot {
+cursor: pointer;
+height: 3px;
+width: 30px;
+margin: 0 2px;
+background-color:whitesmoke;
+display: inline-block;
+transition: background-color 0.6s ease;
+position: relative;
+top: 530px;
+}
+
+.active,
+.dot:hover {
+background-color: #717171;
+}
+
+.animate{
+color: white;
+position: absolute;
+top: 40%;
+left: 38%;
+align-items: center;
+animation: slideDown 2s ease-in-out forwards;
+}
+
+
+@keyframes slideDown {
+0% {
+top: -60%;
+}
+40% {
+top: 50%;
+}
+}
+
+
+
+.animate1{
+font-size: 45px;
+color: white;
+position: absolute;
+top: 45%;
+left: 24%;
+align-items: center;
+text-align: center;
+/* animation: slideDown 3s ease-in-out forwards; */
+animation: slideUp 1s ease-in-out forwards;
+}
+
+
+@keyframes slideUp {
+0% {
+top: 60%;
+}
+100% {
+top: 50%;
+}
+}
+
+
+ 
+
+
+.carousel-item button{
+  width: 180px;
+  
+  padding: 15px 0;
+ text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #3ec1d5;
+  background: #3ec1d5;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 18px;
+  
+  } 
+  .carousel-item button:hover{
+    background: white;
+    color: #3EC1D5;
+
+  }
+
+.btnimageslide{
+  position: relative;
+  top: 70%;
+  left: 42%;
+  }
+
+
+  .carousel-item {
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; 
+  width: 100%; 
+  }
+  
+/* ------------------------------------------------------------
+------------------------------------------------------------
+-----------------------ABOUT-------------------------------- */
+.head{
+  background: whitesmoke;
+  height: 510px;
+  position: relative;
+  top: 560px;
+  
+}
+.imagess img{
+  width: 550px;
+  height: 280px;
+  
+  margin: 10px 60px 10px 60px;
+  padding: 50px
+
+} 
+.line{
+  border-top: 2px solid  rgb(69, 68, 68);;
+  width: 10%;
+  position: relative;
+  left: 620px;
+  top: 45px;
+  
+}
+
+.about h2{
+  text-align: center;
+  font-size: 45px;
+  color: rgb(68, 67, 67);
+  position: relative;
+
+  top: 50px;
+}
+
+.content ul{
+position: relative;
+left: 70px;
+list-style: none;
+
+}
+  
+/* ------------------------------------------------------------
+------------------------------------------------------------
+-----------------------SERVICES-------------------------------- */
+
+.box p{
+  font-size: 15px;
+  color: rgb(79, 79, 79);
+}
+       
+.boxes .box h3{
+  color: rgb(79, 79, 79);
+  cursor: pointer;
+}
+.boxes .box h3:hover{
+  color: #3EC1D5;
+}
+.boxes .box i{
+  color: rgb(79, 79, 79);
+  cursor: pointer;
+}
+.boxes .box i:hover{
+  color: #3EC1D5;
+}
+
+
+/* ---------------------------SERVICES END----------------------------------------- */
+
+
+/* -----------------------------------TEAM-------------------------------------------- */
+.pic img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s; 
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 320px;
+  background-color: rgba(0, 0, 0, 0); 
+  transition: background-color 0.3s; 
+}
+
+
+.pic:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* -----------------------------------TEAM-END------------------------------------------- */
+
+
+
+
+
+
+
+
+
+/* -----------------------------------WORING-WITH-US-------------------------------------------- */
+.secondpart button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #f5f6f6;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  
+  }
+  .secondpart button:hover{
+    background: #3EC1D5;
+    border: 2px solid #3EC1D5;
+  }
+
+
+/* -----------------------------------WORING-WITH-US-END-------------------------------------------- */
+
+  .bttn{
+    width: 80px;
+    padding: 12px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 1px solid #3EC1D5;
+    background: transparent;
+    color: #0d0d0d;
+    cursor: pointer;
+    position: relative;
+    bottom: 900px;
+    left: 460px;
+    overflow: hidden;
+  }
+  span{
+    background: #3EC1D5;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.bttn:hover span{
+    width: 100%;
+}
+.foliom{
+  width: 355px;
+  height: 300px;
+ 
+}
+/* -----------------------------------WORKING-WITH-US -END-------------------------------------------- */
+
+ /* -----------------------------------------------------
+ ---------------------table----------------------------
+ ---------------------------------------------------- */
+
+ .folio img{
+  transition: transform 0.3s; 
+ }
+
+ .overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 355px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0); 
+  transition: background-color 0.3s; 
+}
+
+
+.folio:hover .overlay1 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+ .price{
+  background: whitesmoke;
+  position: relative;
+  bottom: 1950px;
+  height: 900px;
+ }
+ .tablebutton{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #080808;
+  background: #070707;
+  color: #787777;
+  cursor: pointer;
+  position: relative;
+  left: 55px;
+  overflow: hidden;
+  
+  }
+
+  .tablebutton button:hover{
+    background: white;
+  }
+  .tablebuttonbtn{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #3ec1d5;
+  background: #3ec1d5;
+  color: whitesmoke;
+  cursor: pointer;
+  position: relative;
+  left: 59px;
+  overflow: hidden;
+  
+  }
+
+/* 
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button :hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+} */
+
+    
+.styled-table {
+  width: 365px; 
+  border-collapse: collapse; 
+  margin: 20px; 
+  color: #787777;
+  font-size: 18px;
+}
+
+
+.styled-table td {
+  border: 1px solid #ccc; 
+  padding: 15px; 
+  text-align: center;
+  background-color: white; 
+}
+
+.setr td{
+    text-align: left;
+    
+}
+/* ---------------------------Latest News-------------------------------------- */
+
+.imgcontent  h1 ,p,pre{
+  color: rgb(60, 60, 60);
+}
+
+
+.imgcontent img{
+  width: 357px;
+  height: 230px;
+}
+.latestnews{
+  position: relative;
+  bottom: 1100px;
+}
+.heading {
+  font-size: 25px;
+  color: rgb(34, 34, 34);
+}
+
+.imgcontent button{
+  width: 140px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 1px solid #575858;
+  background: transparent;
+  color: rgb(80, 80, 80);
+  cursor: pointer;
+  position: relative;
+  left: 59px;
+  overflow: hidden;
+  
+} 
+
+.imgcontent  button:hover{
+  background:#3ec1d5;
+  border: 1px solid #3ec1d5;
+  color: whitesmoke;
+}
+/* ---------------------------Latest News End-------------------------------------- */
+
+/* -------------------------------------NLUE-TAG---------------------------------------------- */
+.bluetag{
+  border: 1PX SOLID #3EC1D5;
+  background: #3EC1D5;
+  height: 110PX;
+  width: 1400PX;
+ 
+}
+
+.bluetag p{
+  color: whitesmoke;
+  text-align: center;
+  position: relative;
+  top: 40px;
+  right: 160px;
+  font-size: 25px;
+  font-weight: bold;
+  
+}
+.bluetag button{
+  width: 160px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 1px solid #f8fafa;
+  background: white;
+  color:#3EC1D5;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  left: 901px;
+  bottom: 20px;
+  overflow: hidden;
+  
+  
+} 
+.bluetag button:hover{
+background: #3EC1D5;
+color: white;
+}
+/* ?---------------------------contact?--------------------------------------- */
+
+/* .contact{
+  position: absolute;
+  bottom: -1100px;
+} */
+.contact h1{
+  text-align: center;
+  color: #3b3b3b;
+  font-size: 40px;
+}
+ .icon p{
+  font-size: 18px;
+
+} 
+/* ------------------------MAP---------------------------- */
+form input[type="text"] {
+
+
+  height: 40px;
+  width: 530px;
+}
+form input[type="email"] {
+
+
+  height: 40px;
+  width: 530px;
+}
+.form-control {
+
+
+  height: 100px;
+  width: 530px;
+}
+
+.form-group button{
+
+  width: 160px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 1px solid #555454;
+  background: transparent;
+  color:#4c4a4a;
+  cursor: pointer;
+  position: relative;
+  left: 170px;
+  font-size: 16px;
+  
+  overflow: hidden;
+  
+  
+} 
+.form-group button:hover{
+background: #3EC1D5;
+color: white;
+}
+
+.fa-facebook{
+ 
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: #454545;
+  align-items: center;
+  border-color: #070707;
+} 
+
+.fa-twitter{
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: #454545;
+  align-items: center;
+  border-color: #070707;
+}
+.fa-instagram{
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: #454545;
+  align-items: center;
+  border-color: #070707;
+}
+
+.fa-linkedin{
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: #454545;
+  align-items: center;
+  border-color: #070707;
+}
+
+.business{
+  background-color: rgb(253, 251, 251);
+  height: 300px;
+  width: 1200px;
+}
+
+.flicker-img img{
+  height: 100px;
+  width: 100px;
+}
+
+.footer1{
+  width: 1200px;
+  height: 100px;
+  background-color: rgb(238, 238, 238);
+  position: relative;
+  bottom: 335px;
+}
